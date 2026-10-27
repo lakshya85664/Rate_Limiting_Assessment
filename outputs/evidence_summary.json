@@ -1,0 +1,50 @@
+{
+  "all_scenarios_passed": true,
+  "evidence_version": "1.0",
+  "metrics": {
+    "provider.attempts": 5,
+    "requests.total": 4,
+    "status.denied": 1,
+    "status.ok": 1,
+    "status.rate_limited": 1,
+    "status.timeout": 1
+  },
+  "passed_scenarios": 4,
+  "project": "Rate Limiting Assessment",
+  "scenario_count": 4,
+  "scenarios": [
+    {
+      "attempts": 1,
+      "expected_status": "ok",
+      "passed": true,
+      "retry_after_seconds": null,
+      "scenario": "successful_search",
+      "status": "ok"
+    },
+    {
+      "attempts": 1,
+      "expected_status": "rate_limited",
+      "passed": true,
+      "retry_after_seconds": 59.99992380000185,
+      "scenario": "per_user_rate_limit",
+      "status": "rate_limited"
+    },
+    {
+      "attempts": 1,
+      "expected_status": "denied",
+      "passed": true,
+      "retry_after_seconds": null,
+      "scenario": "duplicate_request",
+      "status": "denied"
+    },
+    {
+      "attempts": 2,
+      "expected_status": "timeout",
+      "passed": true,
+      "retry_after_seconds": null,
+      "scenario": "provider_timeout",
+      "status": "timeout"
+    }
+  ],
+  "trace_file": "traces/assessment_trace.jsonl"
+}

@@ -1,0 +1,8 @@
+{"event": {"allowed": true, "event": "rate_limit_decision", "reason": "within_limits", "scope": "none"}, "retry_after_seconds": null, "scenario": "successful_search", "status": "ok"}
+{"event": {"attempts": 1, "event": "provider_execution", "succeeded": true}, "retry_after_seconds": null, "scenario": "successful_search", "status": "ok"}
+{"event": {"event": "tool_completed", "tool": "search"}, "retry_after_seconds": null, "scenario": "successful_search", "status": "ok"}
+{"event": {"allowed": false, "event": "rate_limit_decision", "reason": "per_user_limit_exceeded", "scope": "per_user"}, "retry_after_seconds": 59.99992380000185, "scenario": "per_user_rate_limit", "status": "rate_limited"}
+{"event": {"event": "replay_rejected", "reason": "duplicate_request_id"}, "retry_after_seconds": null, "scenario": "duplicate_request", "status": "denied"}
+{"event": {"allowed": true, "event": "rate_limit_decision", "reason": "within_limits", "scope": "none"}, "retry_after_seconds": null, "scenario": "provider_timeout", "status": "timeout"}
+{"event": {"attempts": 2, "event": "provider_execution", "succeeded": false}, "retry_after_seconds": null, "scenario": "provider_timeout", "status": "timeout"}
+{"event": {"event": "provider_timeout"}, "retry_after_seconds": null, "scenario": "provider_timeout", "status": "timeout"}

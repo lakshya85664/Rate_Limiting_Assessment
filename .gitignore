@@ -1,0 +1,59 @@
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type checking and lint caches
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Build and distribution artifacts
+build/
+dist/
+*.egg-info/
+
+# Local runtime databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Keep assessment deliverables and evidence under version control.
+# Do not ignore README.md, requirements.txt, reports/, outputs/,
+# traces/, schemas/, authorization/, reliability/, adapters/, or tests/.
